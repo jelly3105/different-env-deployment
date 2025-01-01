@@ -1,5 +1,8 @@
 name: Deploy testing
-on: workflow_dispatch
+on: 
+    workflow_dispatch:
+    release:
+        types: [published]
 
 concurrency:
     group: deploy-${{ github.ref }}
