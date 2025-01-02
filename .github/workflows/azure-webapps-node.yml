@@ -1,12 +1,12 @@
 name: Deploy Code
-on: 
-    workflow_dispatch:
+on:
     push:
         tags: releases/[1-9]+.[0-9]+.[0-9]+
-        
+
         # branches: main
     release:
         types: [published]
+    workflow_dispatch:
 
 concurrency:
     group: deploy-${{ github.ref }}
