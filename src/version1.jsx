@@ -1,4 +1,4 @@
-function App() {
+function Version1() {
     return (
       <>
         <header>
@@ -6,4 +6,6 @@ function App() {
         </header>
       </>
     );
-  }
+}
+
+export default Version1;
