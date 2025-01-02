@@ -26,7 +26,7 @@ jobs:
                 npm run build
             - name: Create Zip Artifact
               run: |
-               zip -r ${AZURE_WEBAPP_PACKAGE}.zip dist/ node_modules/ package.json
+               zip -r ${AZURE_WEBAPP_PACKAGE}.zip dist/ package.json src/versions/
             - name: Create artifact
               uses: actions/upload-artifact@v4
               with:
